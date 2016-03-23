@@ -2,3 +2,13 @@
 .navbar-brand{
   max-height: 300px;
 }
+.form-inline{
+  margin-top: 6px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.navbar-toggler{
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
