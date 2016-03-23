@@ -8,7 +8,7 @@
         <% if (users.length) { %>
         <ul>
             <% for (var i in users) { %>
-            <li><a href="/users/<%= users[i].username %>"><%= users[i].name%> <%=users[i].username %></a></li>
+            <li><a href="/users/<%= users[i].username %>"><%= users[i].name%> <%=users[i].username %></a><br><small><%= users[i].title%></small></li>
             <% } %>
         </ul>
         <% } else { %>
