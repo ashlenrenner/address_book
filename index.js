@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+app.use(express.static('public')); //enables custom css and js
 app.set('view engine', 'ejs');
 
 app.get('/users', user.list); //list page
