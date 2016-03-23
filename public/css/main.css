@@ -1,8 +1,4 @@
 /*main css*/
-.new{
-  background-color: red;
-  font-style: italic;
-}
-body{
-  background-color: #f99999;
+.navbar-brand{
+  max-height: 300px;
 }

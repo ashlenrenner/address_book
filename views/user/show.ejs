@@ -3,6 +3,10 @@
     <head>
         <title>Address Book</title>
 
+        <!-- css -->
+      <link href="/css/main.css" rel="stylesheet" type="text/css">
+      <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
         <!-- <h3><%= user.name %> <%= user.username %></h3>
@@ -59,11 +63,16 @@
             <input type="text" id="notes" name="notes" value="<%= user.notes %>" />
             </p>
 
-            <button>Update</button>
-              <p><a href="/users/delete/<%= user.username %>">Delete</a></p>
+            <button class="btn btn-primary">Update</button>
+              <a class="btn btn-danger" href="/users/delete/<%= user.username %>">Delete</a>
 
         </form>
 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+           <!-- Include all compiled plugins (below), or include individual files as needed -->
+           <script src="/js/bootstrap.min.js"></script>
+           <script src="/js/main.js"></script>
 
     </body>
 </html>
