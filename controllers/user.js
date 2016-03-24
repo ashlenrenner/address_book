@@ -71,3 +71,10 @@ exports.remove = function(req, res) {
 
     return res.redirect('/users');
 };
+exports.preview = function(req, res) {
+    var collection = db.get().collection('users');
+
+    collection.find({"username": req.params.id}).limit(1).toArray(function(err, results) {
+        res.render('user/preview', {user: results[0]});
+    });
+};

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Address Book</title>
+
+        <!-- css -->
+      <link href="/css/main.css" rel="stylesheet" type="text/css">
+      <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Quicksand|Cuprum|Monda:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+    <div class="container-fluid">
+    <!-- navbar -->
+        <nav class="navbar navbar-light bg-faded" style="background-color: #333333;">
+          <img class="logo" src="/img/paper.png" />
+        </nav>
+    </div> <!--container-fluid-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <h2 class="header"><%= user.name %> <%= user.username %></h2>
+              <h4 class="subhead"><%= user.title %></h4>
+
+              <h4 class="header">Address</h4>
+                <p> <%= user.street %></p>
+                <p> <%= user.city %>, <%= user.state %> <%= user.zip %></p>
+
+              <h4 class="header">Notes</h4>
+                <p><%= user.notes %> </p>
+
+                <a class="create-btn btn btn-danger" href="/users/<%= user.username %>">Update</a>
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+       <div class="container">
+         <p class="text-muted"><small>Created by Ashlen Renner for a Journalism course at UNC Chapel Hill</small></p>
+       </div>
+     </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="/js/bootstrap.min.js"></script>
+     <script src="/js/main.js"></script>
+
+</body>
+</html>

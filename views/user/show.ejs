@@ -10,87 +10,74 @@
 
     </head>
     <body>
-        <!-- <h3><%= user.name %> <%= user.username %></h3>
-            <p><%= user.title %></p>
 
-            <h4>Address</h4>
-            <p> <%= user.street %></p>
-            <p> <%= user.city %>, <%= user.state %> <%= user.zip %></p>
-
-            <h4>Notes</h4>
-            <p><%= user.notes %> </p>
-
-<p><a href="/users/<%= user.username %>/update">Update</a></p> -->
-<div class="container">
-  <div class="col-md-12">
-<!-- navbar -->
-<nav class="navbar navbar-light bg-faded" style="background-color: #e3f2fd;">
-    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-    &#9776;
-    </button>
-    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <ul class="nav navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/users">Contacts</a>
-      </li>
-    </ul>
-    </div>
-    <form class="form-inline pull-right">
-      <input class="form-control" type="text" placeholder="Search Contacts">
-    </form>
-  </nav>
-</div>
-
-        <form action="/users/<%= user.username %>" method="POST">
-
-            <p>
-            <label>First Name</label>
+    <div class="container-fluid">
+    <!-- navbar -->
+        <nav class="navbar navbar-light bg-faded" style="background-color: #333333;">
+          <img class="logo" src="/img/paper.png" />
+        </nav>
+    </div> <!--container-fluid-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <form action="/users/<%= user.username %>" method="POST">
+              <h3 class="header">Update <%= user.name %> <%= user.username %></h3>
+            <div class="form-group form-value">
+            <label class="contact-info">First Name</label>
             <input type="text" id="name" name="name" value="<%= user.name %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>Last Name</label>
+            <div class="form-group form-value">
+            <label class="contact-info">Last Name</label>
             <input type="text" id="username" name="username" value="<%= user.username %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>Job Title</label>
+            <div class="form-group form-value">
+            <label class="contact-info">Job Title</label>
             <input type="text" id="title" name="title" value="<%= user.title %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>Street Address</label>
+            <div class="form-group form-value">
+            <label class="contact-info">Street Address</label>
             <input type="text" id="street" name="street" value="<%= user.street %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>City</label>
+            <div class="form-group form-value">
+            <label class="contact-info">City</label>
             <input type="text" id="city" name="city" value="<%= user.city %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>State</label>
+            <div class="form-group form-value">
+            <label class="contact-info">State</label>
             <input type="text" id="state" name="state" value="<%= user.state %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>Zip</label>
+            <div class="form-group form-value">
+            <label class="contact-info">Zip</label>
             <input type="text" id="zip" name="zip" value="<%= user.zip %>" />
-            </p>
+          </div>
 
-            <p>
-            <label>Notes</label>
-            <input type="text" id="notes" name="notes" value="<%= user.notes %>" />
-            </p>
+            <div class="form-group form-value">
+            <label class="contact-info">Notes</label>
+            <textarea placeholder="<%= user.notes %>" class="form-control" rows="3"  id="notes" name="notes"></textarea>
+          </div>
 
-            <button class="btn btn-primary">Update</button>
-              <a class="btn btn-danger" href="/users/delete/<%= user.username %>">Delete</a>
+          <div class="col-md-8 col-sm-12">
+            <button class="create-btn btn btn-success">Update</button>
+              <a class="create-btn btn btn-danger" href="/users/delete/<%= user.username %>">Delete</a>
+          </div>
 
-        </form>
-      </div>
+          </form>
+          </div>
+        </div><!--row-->
+      </div> <!--container-->
+
+      <footer class="footer">
+         <div class="container">
+           <p class="text-muted"><small>Created by Ashlen Renner for a Journalism course at UNC Chapel Hill</small></p>
+         </div>
+       </footer>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
            <!-- Include all compiled plugins (below), or include individual files as needed -->

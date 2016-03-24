@@ -15,6 +15,8 @@ app.set('view engine', 'ejs');
 
 app.get('/users', user.list); //list page
 
+app.get('/users/preview/:id', user.preview); //preview contact
+
 app.get('/user/new', user.form); //new action
 app.post('/users', user.create); //new action
 

@@ -7,6 +7,10 @@ font-family: 'Monda', sans-serif;
 font-weight: bold;
 font-size: 200%
 }
+.subhead{
+  font-family: 'Droid Sans', sans-serif;
+
+}
 .logo{
   max-height: 75px;
 }
@@ -66,11 +70,12 @@ input:focus{
 .create-btn{
   padding-left: 15px!important;
   padding-right: 15px!important;
-
+  margin-right: 10px;
 }
 
+
 .footer {
-  /*position: absolute;*/
+  position: sticky;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */

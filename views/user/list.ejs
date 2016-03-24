@@ -29,7 +29,7 @@
         <% if (users.length) { %>
 
             <% for (var i in users) { %>
-            <p class="contacts"><a class="contact" href="/users/<%= users[i].username %>"><%= users[i].name%> <%=users[i].username %></a><br><small><%= users[i].title%></small></p>
+            <p class="contacts"><a class="contact" href="/users/preview/<%= users[i].username %>"><%= users[i].name%> <%=users[i].username %></a><br><small><%= users[i].title%></small></p>
             <hr>
             <% } %>
 
