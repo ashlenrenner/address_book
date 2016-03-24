@@ -1,5 +1,5 @@
 /*main css*/
- p, li, a {
+ p, li, a, label {
   font-family: 'Droid Sans', sans-serif;
 }
 .header {
@@ -42,14 +42,41 @@ font-size: 200%
 .new-contact{
   margin-top: 20px;
 }
+/*new contact form*/
+input{
+  border-width: 1px;
+  border-radius: 5px;
+  border: solid 1px solid #f8f8f8;
+  box-shadow: none;
+}
+input:focus{
+  outline: none;
+  border-color: #33cc66;
+  box-shadow: none;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.contact-info{
+  padding: 5px;
+}
+.form-value{
+  padding: 5px;
+  margin: 10px;
+}
+.create-btn{
+  padding-left: 15px!important;
+  padding-right: 15px!important;
+
+}
 
 .footer {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+  margin-top: 30px;
 }
 .text-muted {
   margin: 20px 0;

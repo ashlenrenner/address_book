@@ -18,53 +18,55 @@
   </div> <!--container-fluid-->
       <div class="container">
         <div class="row">
-        <h3 class="header">New Contact</h3>
+          <div class="col-md-8 col-sm-12">
 
-        <form action="/users" method="POST">
+            <h3 class="header">New Contact</h3>
+            <form action="/users" method="POST">
+                <div class="form-group form-value">
+                  <label class="contact-info">First Name</label>
+                  <input type="text" id="name" name="name" value="" />
+                </div>
 
-            <p>
-            <label>First Name</label>
-            <input type="text" id="name" name="name" value="" />
-            </p>
+                <div class="form-group form-value">
+                    <label class="contact-info">Last Name</label>
+                  <input type="text" id="username" name="username" value="" />
+                </div>
 
-            <p>
-            <label>Last Name</label>
-            <input type="text" id="username" name="username" value="" />
-            </p>
+                <div class="form-group form-value">
+                  <label class="contact-info">Job Title</label>
+                  <input type="text" id="title" name="title" value="" />
+                </div>
 
-            <p>
-            <label>Job Title</label>
-            <input type="text" id="title" name="title" value="" />
-            </p>
+                <div class="form-group form-value">
+                  <label class="contact-info">Street Address</label>
+                  <input type="text" id="street" name="street" value="" />
+                </div>
 
-            <p>
-            <label>Street Address</label>
-            <input type="text" id="street" name="street" value="" />
-            </p>
+                <div class="form-group form-value">
+                  <label class="contact-info">City</label>
+                  <input type="text" id="city" name="city" value="" />
+                </div>
 
-            <p>
-            <label>City</label>
-            <input type="text" id="city" name="city" value="" />
-            </p>
+                <div class="form-group form-value">
+                  <label class="contact-info">State</label>
+                  <input type="text" id="state" name="state" value="" />
+                </div>
 
-            <p>
-            <label>State</label>
-            <input type="text" id="state" name="state" value="" />
-            </p>
+                <div class="form-group form-value">
+                  <label class="contact-info">Zip</label>
+                  <input type="text" id="zip" name="zip" value="" />
+                </div>
 
-            <p>
-            <label>Zip</label>
-            <input type="text" id="zip" name="zip" value="" />
-            </p>
-
-            <p>
-            <label>Notes</label>
-            <input type="text" id="notes" name="notes" value="" />
-            </p>
-
-            <button class="btn btn-primary">Create</button>
-
-        </form>
+                <div class="form-group form-value">
+                  <label class="contact-info">Notes</label>
+                  <!-- <input type="text" id="notes" name="notes" value="" /> -->
+                  <textarea class="form-control" rows="3" id="notes" name="notes" value="" ></textarea>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                <button class="create-btn btn btn-danger">Create</button>
+              </div>
+            </form>
+        </div>
       </div><!--row-->
     </div><!--container-->
 
@@ -73,7 +75,7 @@
            <p class="text-muted"><small>Created by Ashlen Renner for a Journalism course at UNC Chapel Hill</small></p>
          </div>
        </footer>
-       
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
            <!-- Include all compiled plugins (below), or include individual files as needed -->
