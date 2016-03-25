@@ -1,4 +1,5 @@
 /*main css*/
+
  p, li, a, label {
   font-family: 'Droid Sans', sans-serif;
 }
@@ -17,12 +18,13 @@ font-weight: bold;
 }
 .logo{
   max-height: 80px;
-  margin-left: 27%;
+  margin-left: 18%;
 }
 .navbar{
-  width: 200%!important;
+  width: 108%!important;
   margin-left: -100px;
   border: none;
+  height: 80px;
 }
 .form-inline{
   margin-top: 17px;
@@ -76,41 +78,42 @@ input:focus{
 }
 .form-input{
   position: absolute;
-  margin-left: 50px;
+  margin-left: 25px;
   padding: 5px;
   border: 1px solid #cccccc;
 }
 .form-input-job{
   position: absolute;
-  margin-left: 65px;
+  margin-left: 40px;
   padding: 5px;
   border: 1px solid #cccccc;
 
 }
 .form-input-address{
   position: absolute;
-  margin-left: 25px;
+  margin-left: 40px;
   padding: 5px;
   border: 1px solid #cccccc;
+  width: 300px;
 
 }
 .form-input-city {
   position: absolute;
-  margin-left: 93px;
+  margin-left: 67px;
   padding: 5px;
   border: 1px solid #cccccc;
 
 }
 .form-input-state{
   position: absolute;
-  margin-left: 85px;
+  margin-left: 58px;
   padding: 5px;
   border: 1px solid #cccccc;
 
 }
 .form-input-zip{
   position: absolute;
-  margin-left: 95px;
+  margin-left: 70px;
   padding: 5px;
   border: 1px solid #cccccc;
 
@@ -130,8 +133,8 @@ input:focus{
 }
 
 .footer {
-  position: sticky;
-  bottom: 0;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
