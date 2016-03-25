@@ -2,20 +2,27 @@
  p, li, a, label {
   font-family: 'Droid Sans', sans-serif;
 }
+
 .header {
 font-family: 'Monda', sans-serif;
 font-weight: bold;
-font-size: 200%
+/*font-size: 200%*/
 }
 .subhead{
   font-family: 'Droid Sans', sans-serif;
 
 }
+.red{
+  border: 1px solid #d9534f;
+}
 .logo{
-  max-height: 75px;
+  max-height: 80px;
+  margin-left: 27%;
 }
 .navbar{
-  width: 100%!important;
+  width: 200%!important;
+  margin-left: -100px;
+  border: none;
 }
 .form-inline{
   margin-top: 17px;
@@ -29,7 +36,7 @@ font-size: 200%
 }
 .contacts{
   text-decoration: none;
-  margin: 10px;
+  margin-top: 10px;
   padding: 5px;
 }
 .contact{
@@ -65,14 +72,62 @@ input:focus{
 }
 .form-value{
   padding: 5px;
-  margin: 10px;
+  margin-top: 10px;
 }
+.form-input{
+  position: absolute;
+  margin-left: 50px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+.form-input-job{
+  position: absolute;
+  margin-left: 65px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+
+}
+.form-input-address{
+  position: absolute;
+  margin-left: 25px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+
+}
+.form-input-city {
+  position: absolute;
+  margin-left: 93px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+
+}
+.form-input-state{
+  position: absolute;
+  margin-left: 85px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+
+}
+.form-input-zip{
+  position: absolute;
+  margin-left: 95px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+
+}
+
 .create-btn{
   padding-left: 15px!important;
   padding-right: 15px!important;
   margin-right: 10px;
+  margin-top: 20px;
 }
-
+.update-btn{
+  padding-left: 15px!important;
+  padding-right: 15px!important;
+  margin-right: 10px;
+  margin-top: 20px;
+}
 
 .footer {
   position: sticky;

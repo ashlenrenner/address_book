@@ -19,17 +19,18 @@
 
   <div class="container">
     <div class="row">
-      <form class="form-inline pull-right">
+      <form class="form-inline pull-right col-md-4 col-sm-12">
         <input class="form-control" type="text" placeholder="Search Contacts">
       </form>
 
     <!--contcats list-->
-        <h3 class="header">Contacts</h3>
-        <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12">
+        <h1 class="header">Contacts</h1>
+        <hr class="red">
         <% if (users.length) { %>
 
             <% for (var i in users) { %>
-            <p class="contacts"><a class="contact" href="/users/preview/<%= users[i].username %>"><%= users[i].name%> <%=users[i].username %></a><br><small><%= users[i].title%></small></p>
+            <h4 class="contacts"><a class="contact" href="/users/preview/<%= users[i].username %>"><%= users[i].name%> <%=users[i].username %></a><br><small><%= users[i].title%></small></h4>
             <hr>
             <% } %>
 
@@ -38,7 +39,7 @@
         <% } %>
       </div>
       <div class="col-md-12 col-sm-10 center-block">
-        <a class="btn btn-danger new-contact" href="/user/new">New Contact</a>
+        <a class="btn btn-success new-contact" href="/user/new">New Contact</a>
       </div>
 
     </div><!--row-->

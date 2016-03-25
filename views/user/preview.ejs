@@ -17,31 +17,34 @@
           <img class="logo" src="/img/paper.png" />
         </nav>
     </div> <!--container-fluid-->
+
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-12">
-            <h2 class="header"><%= user.name %> <%= user.username %></h2>
+            <h1 class="header"><%= user.name %> <%= user.username %></h1>
               <h4 class="subhead"><%= user.title %></h4>
+              <hr class= "red">
 
-              <h4 class="header">Address</h4>
+              <h3 class="header">Address</h3>
                 <p> <%= user.street %></p>
                 <p> <%= user.city %>, <%= user.state %> <%= user.zip %></p>
-
-              <h4 class="header">Notes</h4>
+              <hr>
+              <h3 class="header">Notes</h3>
                 <p><%= user.notes %> </p>
 
-                <a class="create-btn btn btn-danger" href="/users/<%= user.username %>">Update</a>
+                <a class="update-btn btn btn-success" href="/users/<%= user.username %>">Update</a>
+                <a class="update-btn btn btn-default" href="/users">Back to Contacts</a>
 
 
         </div>
       </div>
     </div>
 
-    <footer class="footer">
-       <div class="container">
-         <p class="text-muted"><small>Created by Ashlen Renner for a Journalism course at UNC Chapel Hill</small></p>
-       </div>
-     </footer>
+      <footer class="footer">
+         <div class="container">
+           <p class="text-muted"><small>Created by Ashlen Renner for a Journalism course at UNC Chapel Hill.</small></p>
+         </div>
+       </footer>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
